@@ -13,59 +13,103 @@
                 rel="stylesheet">
                 <script src="https://kit.fontawesome.com/4e3a155b08.js" crossorigin="anonymous"></script>
 </head>
-
-
+           
+<!--Imagen/botón de la Barra de menú-->
 <body>
-    <header>
-        <i class="fa-solid fa-bars"></i>
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <nav>
-            <ul>
-                <li>Home</li>
-                <li>Datos Académicos</li>
-                <li>Contacto</li>
+    <header class="foto-inicio">
+        <nav class="foto-logo">
+            <a href="#" class="logo">
+                <div 
+                class="foto-perfil"><img src="./44.jpg" alt="programador">
+                </div>
+                <div>
+                John Newman<br/>
+                Programador
+                </div>
+            </a> 
+
+<!--Barra de menú-->
+            <button class="open-menu" aria-label="Abrir menú">
+                <img src="icon-menu.png" alt="Abrir menú">
+            </button>
+                <ul class="menu">
+                    <button class="close-menu" aria-label="Cerrar menú">
+                        <img src="icon-cerrar.png" alt="Cerrar menú"> 
+                    </button>
+                <li><a href="#estudios" class="selected"> Datos Académicos</a></li>
+                <li><a href="#objetivo" class="selected"> Objetivo Relevante</a></li> 
+                <li><a href="#contact" class="selected"> Contacto</a></li> 
             </ul>
         </nav>
     </header>
+    
+<!--Presentación-->
     <main>
-        <section id="hero">
-            <div class="mi foto">
+        <section id="profile">
+            <div class="mifoto">
                 <img src="./44.jpg">
                 <h1>John Newman</h1>
                 <h2> Diseñador de Páginas Web Front End<h2>
             </div>
-
         </section>
-        <section id="datos-experiencia">
-            <div class="estudios">
-                <h3>Datos Académicos</h3>
-            </div>
-            <div>
-                <ul>
-                    <li>Nivel Primario: en la Escuela n° 307 “Gral. José de San Martín”. </li>
-                    <li>Nivel Secundario: en la E.G.P.S. n° 7 “La Portuaria”. </li>
-                    <li>Nivel Terciario: Técnico Superior en Enfermería en el "Instituto de Salud Pública". </li>
-                    <li>Certificado de Curso Introducción en Programación dictado por el "Informatorio y la
-                        Subsecretaria
-                        del Ministerio de Trabajo".</li>
-                    <li> Curso de Peluquería Profecional en el Instituto "E y D".</li>
-                </ul>
-                <h4>Objetivo Relevante</h4>
+
+<!--Estudios, experiencia-->        
+        <section id="estudios">
+            <div class="titulo">
+            <h3>Datos Académicos</h3> </div>
+              <ul>
+                <li>Nivel Primario: en la Escuela n° 307 “Gral. José de San Martín”. </li>
+                <li>Nivel Secundario: en la E.G.P.S. n° 7 “La Portuaria”. </li>
+                <li>Nivel Terciario: Técnico Superior en Enfermería en el "Instituto de Salud Pública". </li>
+                <li>Certificado de Curso Introducción en Programación dictado por el "Informatorio y la
+                    Subsecretaria
+                    del Ministerio de Trabajo".</li>
+                <li> Curso de Peluquería Profecional en el Instituto "E y D".</li> 
+              </ul> 
+        </section>
+
+<!--Objetivos, más sobre mí-->
+        <section id="objetivo"> 
+            <div class="nota"> 
+                <h4>Objetivo Relevante</h4> </div>
                 <p>Me considero una persona seria, organizada en el ámbito laboral. Me gusta trabajar en equipo y solo
-                    también, no tengo problemas. Siempre estoy dispuesto a aprender cosas nuevas y me gusta compartir lo
-                    que he aprendido.</p>
+                también, no tengo problemas. Siempre estoy dispuesto a aprender cosas nuevas y me gusta compartir lo
+                que he aprendido.</p> 
+            <div>
                 <p id="demo">Más sobre mi</p>
-                <button type="button" id="boton"> Hacer click aquí</button>
-                <script src=funciones.js></script>
+                  <button type="button" id="boton"> Hacer click aquí </button>
+                  <script src=funciones.js></script> 
             </div>
         </section>
-
     </main>
 
+<!--Contacta conmigo, número de teléfono, e-mail, opciones de redes sociales, -->
     <footer> 
-        <section id="contacto"> 
+        <section id="contact"> 
             <h6>Contacta conmigo</h6>
+            <br>
+            <div class="numero-cel"><i class="fab fa-whatsapp"></i>
+            <h7>+54 3624647585</h7></div>
+            <div class="correo"><i class="fa-solid fa-square-envelope"></i>
+            <h8> aaast2008@hotmail.com</h8> </div>
+            <div class="redes-contacto">
+                <ul>
+                    <li><a href="https://www.facebook.com/wuatto" target="_blank" 
+                        rel="noopener noreferrer" class="facebook"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/andresacosta007009008" target="_blank" 
+                        rel="noopener noreferrer" class="linkedin"><i class="fab fa-linkedin"></i></a></li>
+                     <li><a href="https://github.com/Andress777777" target="_blank" 
+                        rel="noopener noreferrer" class="GitHub"><i class="fab fa-github"></i></a></li>
+                </ul>
+            </div>
+
+<!--Formulario-->        
             <form>
+                <div class="consult">
+                    <h9>Consultas</h9>
+                </div>
+                <br>
+                <br>
                 <div>
                     <label>Nombre</label>
                     <input type="text" placeholder="ingrese su nombre" />
@@ -86,5 +130,8 @@
         </section>
     </footer>
 </body>
-
 </html>
+
+
+           
+   
